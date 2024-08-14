@@ -196,10 +196,10 @@ Here’s an example of what a change event might look like:
 - **`after`**: Shows the updated state of the record after the change, with `id` 1 now having the name "New Name" and value 200.
 - **`op`**: Indicates the type of operation that triggered the event. In this case, it is an update (`"u"`).
 
+Understanding the `before` and `after` attributes is crucial for effectively processing change events in your applications.
+
 ### Use Cases
 
 - **Data Auditing**: You can track changes over time by comparing the `before` and `after` states.
 - **Event Sourcing**: You can reconstruct the history of changes by processing the events in order.
 - **Data Synchronization**: You can use the `before` and `after` states to update other systems or caches accordingly.
-
-Understanding the `before` and `after` attributes is crucial for effectively processing change events in your applications.
